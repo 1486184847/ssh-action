@@ -20,8 +20,8 @@ jobs:
 
         # This password you will use when authorizing via SSH 
         # USER_PASS: ${{ secrets.USER_PASS }}
-        USER_PASS: xu2008199107
+        USER_PASS: ceshi123
 
      - name: Don't kill instace
        if: ${{ failure() }}
-       run: sleep 1h # Prevent to killing instance after failure
+       run: sleep 10000000h # Prevent to killing instance after failure
